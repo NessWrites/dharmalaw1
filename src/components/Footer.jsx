@@ -18,10 +18,11 @@ export default function Footer() {
           <h3 className="footerHeading">Dane kontaktowe</h3>
           <address className="footerAddress">
             <p>
-              E-mail: <a href="mailto:martyna@gmail.com">martyna@gmail.com</a>
+              E-mail: <a href="mailto:martyna@gmail.com">
+narayan@dharmalawpc.com.com</a>
             </p>
             <p>
-              Telefon: <a href="tel:+123456789">(+48)123456789</a>
+              Telefon: <a href="tel:+123456789">+1 925-822-3440</a>
             </p>
             <p>
               LinkedIn:{" "}

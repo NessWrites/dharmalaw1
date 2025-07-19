@@ -6,6 +6,8 @@
 .footerContent {
   padding: 3rem 1rem 0.5rem;
   border-bottom: 1px solid var(--gold);
+  
+  
 }
 
 .footerSection {
@@ -32,6 +34,7 @@
 .footerHeading {
   font-weight: 600;
   margin: 1rem 0;
+  
 }
 
 address{
