@@ -24,25 +24,24 @@ export default function About() {
         <p className="lawyerAbout">Attorney</p>
         <h2 className="h2About">Narayan P. Bhandari</h2>
         <p className="aboutText">
-          Jestem prawnikiem specjalizującym się w sprawach cywilnych i
-          gospodarczych. Pomagam klientom w rozwiązywaniu trudnych problemów
-          prawnych oraz oferuję wsparcie w podejmowaniu kluczowych decyzji
-          biznesowych.
+          I am a lawyer specializing in civil and commercial matters. 
+          I help clients resolve difficult legal issues and offer support
+           in making key business decisions.
         </p>
         <hr className="hrElement" />
-        <h4 className="educationTitle">Doświadczenie</h4>
+        <h4 className="educationTitle">Experience</h4>
         <p className="educationAbout">
-          Posiadam wieloletnie doświadczenie w pracy z klientami indywidualnymi
-          i korporacyjnymi. Brałam udział w negocjacjach międzynarodowych umów
-          oraz prowadziłam skomplikowane sprawy sądowe, które wymagały
-          precyzyjnego podejścia i głębokiej wiedzy prawniczej.
+          I have extensive experience working with individual and corporate clients.
+           I have participated in negotiating international agreements and handled complex
+            court cases that required a precise approach and in-depth legal knowledge.
         </p>
-        <h4 className="educationTitle">Edukacja</h4>
+        <h4 className="educationTitle">Education</h4>
         <p className="educationAbout">
-          Ukończyłam studia prawnicze na renomowanym uniwersytecie,
-          specjalizując się w prawie cywilnym i handlowym. W trakcie kariery
-          odbyłam również liczne kursy doszkalające, które pozwoliły mi pogłębić
-          wiedzę w obszarze mediacji oraz arbitrażu. <br />
+          I graduated with a law degree from a renowned university, specializing in civil and commercial law.
+           Throughout my career, I have also completed numerous continuing education courses that have allowed
+            me to deepen my knowledge in the areas of mediation and arbitration.
+
+ <br />
         </p>
       </motion.div>
     </div>

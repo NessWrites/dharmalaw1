@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "./../assets/logo.svg";
+import Logo from "./../assets/logo.png";
 import "./../css/components/Footer.css";
 
 export default function Footer() {
@@ -9,13 +9,13 @@ export default function Footer() {
         <div className="footerSection footerInfo">
           <img className="footerLogo" src={Logo} alt="Logo kancelarii" />
           <p className="footerDescription">
-            Świadczę usługi prawne w biurze oraz zdalnie, dostosowując się do
-            potrzeb klientów w całym kraju.
+            I provide legal services in the office and remotely, adapting to
+             the needs of clients across the country.
           </p>
         </div>
 
         <div className="footerSection footerContact">
-          <h3 className="footerHeading">Dane kontaktowe</h3>
+          <h3 className="footerHeading">Contact Details</h3>
           <address className="footerAddress">
             <p>
               E-mail: <a href="mailto:martyna@gmail.com">
@@ -25,39 +25,39 @@ narayan@dharmalawpc.com.com</a>
               Telefon: <a href="tel:+123456789">+1 925-822-3440</a>
             </p>
             <p>
-              LinkedIn:{" "}
+              FaceBook:{" "}
               <a
-                href="https://linkedin.com/martynaw"
+                href="https://www.facebook.com/1375dharmalawpc"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                linkedin.com/martynaw
+                dharmalawpc
               </a>
             </p>
           </address>
         </div>
 
         <div className="footerSection footerSpecialties">
-          <h3 className="footerHeading">Obszary specjalizacji</h3>
+          <h3 className="footerHeading">Areas of Expertise</h3>
           <nav aria-label="Obszary specjalizacji">
             <ul className="footerLinks">
               <li>
-                <Link to="/prawo-cywilne">Prawo Cywilne</Link>
+                <Link to="/prawo-cywilne">Civil Law</Link>
               </li>
               <li>
-                <Link to="/prawo-rodzinne">Prawo Rodzinne</Link>
+                <Link to="/prawo-rodzinne">Family Law</Link>
               </li>
               <li>
-                <Link to="/prawo-gospodarcze">Prawo Gospodarcze</Link>
+                <Link to="/prawo-gospodarcze">Commercial Law</Link>
               </li>
               <li>
-                <Link to="/prawo-pracy">Prawo Pracy</Link>
+                <Link to="/prawo-pracy">Labor Law</Link>
               </li>
               <li>
-                <Link to="/prawo-nieruchomosci">Prawo Nieruchomości</Link>
+                <Link to="/prawo-nieruchomosci">Real E-state Law</Link>
               </li>
               <li>
-                <Link to="/prawo-danych">Prawo Ochrony Danych Osobowych</Link>
+                <Link to="/prawo-danych">Personal Data Protection Law</Link>
               </li>
             </ul>
           </nav>
@@ -65,7 +65,7 @@ narayan@dharmalawpc.com.com</a>
       </div>
 
       <div className="footerBottom">
-        <p className="footerCredit">Designed and Coded by Laura Głąb</p>
+        <p className="footerCredit">Copyrights</p>
       </div>
     </footer>
   );

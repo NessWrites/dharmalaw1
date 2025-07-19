@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Logo from "./../../assets/logo.svg";
+import Logo from "./../../assets/logo.png";
 import SubPageImg from "./../../assets/subpageImg.jpg";
 import "./../../css/sections/SubPage.css";
 

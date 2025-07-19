@@ -58,8 +58,7 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <h4 className="contactSubTitle">
-              Zaufaj doświadczeniu i skontaktuj się, aby uzyskać profesjonalną
-              pomoc prawną dostosowaną do Twoich potrzeb.
+              Trust our experience and contact us to receive professional legal assistance tailored to your needs.
             </h4>
           </motion.div>
 
@@ -81,7 +80,7 @@ export default function Contact() {
               id="name"
               className="inputField"
               {...register("name")}
-              placeholder="Twoje Imię *"
+              placeholder="Your Name*"
               aria-invalid={errors.name ? "true" : "false"}
               aria-describedby={errors.name ? "name-error" : undefined}
             />
@@ -96,7 +95,7 @@ export default function Contact() {
               id="email"
               className="inputField"
               {...register("email")}
-              placeholder="Twój E-mail *"
+              placeholder="Your E-mail *"
               aria-invalid={errors.email ? "true" : "false"}
               aria-describedby={errors.email ? "email-error" : undefined}
             />
@@ -111,7 +110,7 @@ export default function Contact() {
               id="message"
               className="inputField"
               {...register("message")}
-              placeholder="Wiadomość *"
+              placeholder="Message *"
               aria-invalid={errors.message ? "true" : "false"}
               aria-describedby={errors.message ? "message-error" : undefined}
             ></textarea>
@@ -127,7 +126,7 @@ export default function Contact() {
               <input
                 className="submitBtn"
                 type="submit"
-                value="Wyślij wiadomość"
+                value="Send Message"
                 aria-label="Wyślij formularz kontaktowy"
               />
             </div>

@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 3300);
     console.log.apply(console, [
-      "%c Designed and Coded by Laura Głąb",
+      "%c Ness",
       "color: white" +
         "; background: padding:5px 0; border-radius: 5px; font-weight: bold; background-color: #897455;",
     ]);
@@ -27,94 +27,93 @@ export default function App() {
   const pages = [
     {
       path: "/prawo-cywilne",
-      title: "Prawo Cywilne",
+      title: "Civil Law",
       description:
-        "W mojej kancelarii zajmuję się kompleksową obsługą spraw z zakresu prawa cywilnego, w tym sporządzaniem i analizą umów, dochodzeniem roszczeń oraz reprezentacją klientów w postępowaniach sądowych. Pomagam w rozwiązywaniu sporów dotyczących zobowiązań, odszkodowań oraz ochrony dóbr osobistych. Moim celem jest zapewnienie skutecznej ochrony praw klientów oraz wsparcie w negocjacjach i mediacjach.",
-      subTitle: "Moja pomoc w zakresie prawa cywilnego obejmuje:",
+        "At my law firm, I provide comprehensive civil law services, including drafting and analyzing contracts, pursuing claims, and representing clients in court. I assist in resolving disputes involving obligations, compensation, and the protection of personal rights. My goal is to ensure effective protection of clients' rights and support in negotiations and mediation.",
+      subTitle: "My assistance in civil law includes:",
       ulSubpage: [
-        "sporządzanie i opiniowanie umów cywilnoprawnych,",
-        "doradztwo w sprawach dotyczących praw własności oraz zobowiązań,",
-        "prowadzenie spraw sądowych związanych z dochodzeniem roszczeń cywilnych,",
-        "reprezentację klientów w sprawach o odszkodowania i zadośćuczynienia,",
-        "pomoc w sprawach spadkowych,podziału majątku oraz ustalania praw do nieruchomości,",
-        "mediacje i negocjacje mające na celu polubowne rozwiązywanie sporów.",
+        "preparing and reviewing civil law contracts",
+        "advice on matters relating to property rights and obligations",
+        "conducting court cases related to the pursuit of civil claims",
+        "representing clients in cases of compensation and redress",
+        "assistance in inheritance matters, division of property, and establishing rights to real estate",
+        "mediation and negotiations aimed at amicable resolution of disputes",
       ],
     },
     {
       path: "/prawo-rodzinne",
-      title: "Prawo Rodzinne",
+      title: "Family Law",
       description:
-        "W mojej kancelarii prowadzę sprawy o rozwód, separację oraz podział majątku, dbając o interesy moich klientów na każdym etapie postępowania. Udzielam wsparcia w sprawach dotyczących władzy rodzicielskiej, ustalania kontaktów z dziećmi oraz alimentów. Dodatkowo, pomagam w rozwiązywaniu sporów związanych z ustaleniem lub zaprzeczeniem ojcostwa oraz reprezentuję klientów w procesach adopcyjnych.",
-      subTitle: "Moja pomoc w zakresie prawa rodzinnego obejmuje:",
+        "At my law firm, I handle divorce, separation, and property division cases, ensuring the best interests of my clients at every stage of the proceedings. I provide support in matters related to parental authority, establishing contact with children, and alimony. Additionally, I assist in resolving disputes concerning the establishment or denial of paternity and represent clients in adoption processes.",
+      subTitle: "My assistance in family law includes:",
       ulSubpage: [
-        "prowadzenie spraw o rozwód, separację oraz podział majątku,",
-        "doradztwo i reprezentację w sprawach dotyczących władzy rodzicielskiej oraz ustalania kontaktów z dziećmi,",
-        "pomoc w sprawach alimentacyjnych, w tym dochodzenie i egzekwowanie alimentów,",
-        "reprezentację klientów w sprawach o odszkodowania i zadośćuczynienia,",
-        "rozwiązywanie spraw związanych z ustaleniem lub zaprzeczeniem ojcostwa,",
-        "wsparcie w procesach adopcyjnych oraz pieczy zastępczej,",
-        "mediacje rodzinne mające na celu polubowne rozwiązywanie konfliktów.",
+        "handling divorce, separation, and property division cases",
+        "advising and representing in matters concerning parental authority and establishing contact with children",
+        "assistance in alimony matters, including pursuing and enforcing alimony",
+        "representing clients in cases involving compensation and redress",
+        "resolving disputes related to the establishment or denial of paternity",
+        "support in adoption processes and foster care",
+        "family mediation aimed at amicable conflict resolution",
       ],
     },
     {
       path: "/prawo-gospodarcze",
-      title: "Prawo Gospopdarcze",
+      title: "Commercial Law",
       description:
-        "W mojej kancelarii zajmuję się doradztwem przy zakładaniu, przekształcaniu oraz likwidacji spółek, a także przygotowuję umowy handlowe dostosowane do potrzeb klientów. Reprezentuję przedsiębiorców w sporach gospodarczych przed sądami oraz w negocjacjach z partnerami biznesowymi. Ponadto, wspieram klientów w sprawach dotyczących odpowiedzialności członków zarządu i ochrony tajemnicy przedsiębiorstwa.",
-      subTitle: "Moja pomoc w zakresie prawa gospodarczego obejmuje:",
+        "At my law firm, I provide advisory services for the establishment, transformation, and liquidation of companies, as well as drafting commercial contracts tailored to clients' needs. I represent entrepreneurs in commercial disputes before courts and in negotiations with business partners. Additionally, I support clients in matters related to the liability of board members and the protection of trade secrets.",
+      subTitle: "My assistance in commercial law includes:",
       ulSubpage: [
-        "doradztwo przy zakładaniu, przekształcaniu oraz likwidacji spółek i innych form działalności gospodarczej,",
-        "sporządzanie i opiniowanie umów handlowych, w tym kontraktów z partnerami biznesowymi,",
-        "reprezentację w sporach gospodarczych przed sądami i arbitrażem,",
-        "wsparcie w negocjacjach i mediacjach dotyczących sporów biznesowych,",
-        "pomoc w sprawach dotyczących odpowiedzialności członków zarządu i organów spółek,",
-        "doradztwo w zakresie prawa konkurencji, ochrony tajemnicy przedsiębiorstwa oraz zwalczania nieuczciwej konkurencji.",
+        "advisory services for the establishment, transformation, and liquidation of companies and other business entities",
+        "drafting and reviewing commercial contracts, including agreements with business partners",
+        "representation in commercial disputes before courts and arbitration",
+        "support in negotiations and mediations related to business disputes",
+        "assistance in matters concerning the liability of board members and company bodies",
+        "advisory services on competition law, protection of trade secrets, and combating unfair competition",
       ],
     },
     {
       path: "/prawo-danych",
-      title: "Prawo Ochrony Danych Osobowych",
+      title: "Data Protection Law",
       description:
-        "W mojej kancelarii zajmuję się doradztwem w zakresie zgodności z przepisami RODO oraz krajowymi regulacjami dotyczącymi ochrony danych osobowych. Pomagam klientom w przygotowywaniu i wdrażaniu polityk ochrony danych oraz przeprowadzam audyty, aby ocenić ryzyko związane z przetwarzaniem danych. Reprezentuję również klientów w postępowaniach przed organami nadzoru, w tym przed Prezesem Urzędu Ochrony Danych Osobowych.",
-      subTitle:
-        "Moja pomoc w zakresie prawa ochrony danych osobowych obejmuje:",
+        "At my law firm, I provide advisory services on compliance with GDPR and national regulations regarding personal data protection. I assist clients in preparing and implementing data protection policies and conducting audits to assess risks related to data processing. I also represent clients in proceedings before supervisory authorities, including the President of the Personal Data Protection Office.",
+      subTitle: "My assistance in data protection law includes:",
       ulSubpage: [
-        "doradztwo w zakresie zgodności z przepisami RODO oraz krajowymi regulacjami dotyczącymi ochrony danych osobowych,",
-        "przygotowywanie i wdrażanie polityk ochrony danych osobowych, procedur oraz klauzul informacyjnych,",
-        "prowadzenie audytów wewnętrznych i oceny ryzyka związanego z przetwarzaniem danych,",
-        "reprezentację przed organami nadzoru, w tym przed Prezesem Urzędu Ochrony Danych Osobowych (UODO),",
-        "wsparcie w procesach zgłaszania naruszeń ochrony danych osobowych oraz zarządzania incydentami,",
-        "szkolenia dla pracowników i kadry zarządzającej w zakresie ochrony danych osobowych.",
+        "advisory services on compliance with GDPR and national personal data protection regulations",
+        "preparing and implementing personal data protection policies, procedures, and information clauses",
+        "conducting internal audits and assessing risks related to data processing",
+        "representation before supervisory authorities, including the President of the Personal Data Protection Office (UODO)",
+        "support in reporting data protection breaches and managing incidents",
+        "training for employees and management on personal data protection",
       ],
     },
     {
       path: "/prawo-pracy",
-      title: "Prawo Pracy",
+      title: "Labor Law",
       description:
-        "W mojej kancelarii zajmuję się doradztwem w sprawach dotyczących nawiązywania i rozwiązywania umów o pracę, w tym sporami o niezgodne z prawem zwolnienia. Reprezentuję klientów w postępowaniach dotyczących mobbingu, dyskryminacji oraz innych naruszeń praw pracowniczych. Dodatkowo, przygotowuję i opiniuję regulaminy pracy oraz wspieram przedsiębiorców w kwestiach związanych z reorganizacją zakładów pracy i zwolnieniami grupowymi.",
-      subTitle: "Moja pomoc w zakresie prawa pracy obejmuje:",
+        "At my law firm, I provide advisory services on matters related to the establishment and termination of employment contracts, including disputes over wrongful terminations. I represent clients in proceedings concerning mobbing, discrimination, and other violations of employee rights. Additionally, I draft and review work regulations and support entrepreneurs in matters related to workplace reorganization and collective redundancies.",
+      subTitle: "My assistance in labor law includes:",
       ulSubpage: [
-        "doradztwo w sprawach dotyczących nawiązywania, zmiany i rozwiązywania umów o pracę,",
-        "reprezentację w sporach pracowniczych, w tym w sprawach o przywrócenie do pracy i odszkodowania,",
-        "pomoc w sporach dotyczących mobbingu, dyskryminacji oraz innych naruszeń praw pracowniczych,",
-        "sporządzanie oraz opiniowanie regulaminów pracy, wynagrodzeń i innych dokumentów wewnętrznych,",
-        "wsparcie w sprawach związanych z czasem pracy, wynagrodzeniem oraz urlopami,",
-        "mediacje i negocjacje mające na celu polubowne rozwiązywanie sporów.",
+        "advisory services on the establishment, amendment, and termination of employment contracts",
+        "representation in labor disputes, including cases for reinstatement and compensation",
+        "assistance in disputes concerning mobbing, discrimination, and other violations of employee rights",
+        "drafting and reviewing work regulations, remuneration policies, and other internal documents",
+        "support in matters related to working hours, remuneration, and leaves",
+        "mediation and negotiations aimed at amicable resolution of disputes",
       ],
     },
     {
       path: "/prawo-nieruchomosci",
-      title: "Prawo Nieruchomości",
+      title: "Real Estate Law",
       description:
-        "W mojej kancelarii zajmuję się doradztwem prawnym przy transakcjach dotyczących zakupu, sprzedaży oraz najmu nieruchomości, dbając o zgodność z przepisami prawa. Reprezentuję klientów w sporach dotyczących prawa własności, zasiedzenia oraz zniesienia współwłasności. Dodatkowo, pomagam w sprawach związanych z użytkowaniem wieczystym, służebnościami oraz roszczeniami wynikającymi z naruszenia prawa do nieruchomości.",
-      subTitle: "Moja pomoc w zakresie prawa nieruchomości obejmuje:",
+        "At my law firm, I provide legal advisory services for transactions involving the purchase, sale, and lease of real estate, ensuring compliance with legal regulations. I represent clients in disputes concerning property rights, acquisitive prescription, and the abolition of co-ownership. Additionally, I assist in matters related to perpetual usufruct, easements, and claims arising from violations of property rights.",
+      subTitle: "My assistance in real estate law includes:",
       ulSubpage: [
-        "doradztwo prawne przy zakupie, sprzedaży oraz najmie nieruchomości,",
-        "sporządzanie i opiniowanie umów deweloperskich, sprzedaży oraz najmu,",
-        "pomoc w sprawach dotyczących użytkowania wieczystego, służebności oraz hipotek,",
-        "reprezentację w sprawach związanych z prawem własności, zasiedzeniem oraz zniesieniem współwłasności,",
-        "wsparcie w postępowaniach dotyczących roszczeń o naruszenie posiadania lub prawa do nieruchomości,",
-        "prowadzenie spraw związanych z inwestycjami budowlanymi oraz zagospodarowaniem przestrzennym.",
+        "legal advisory services for the purchase, sale, and lease of real estate",
+        "drafting and reviewing developer agreements, sales, and lease contracts",
+        "assistance in matters concerning perpetual usufruct, easements, and mortgages",
+        "representation in cases related to property rights, acquisitive prescription, and abolition of co-ownership",
+        "support in proceedings concerning claims for violation of possession or property rights",
+        "handling matters related to construction investments and spatial planning",
       ],
     },
   ];
@@ -140,7 +139,7 @@ export default function App() {
           ))}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );

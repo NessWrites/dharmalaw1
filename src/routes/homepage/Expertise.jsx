@@ -23,7 +23,7 @@ export default function Expertise() {
         viewport={{ once: true, amount: 0.2 }}
       >
         <h2 id="expertise-heading" className="expertiseTitle subheading">
-          Zapoznaj się z moimi obszarami specjalizacji
+         Our Areas of Expertise
         </h2>
       </motion.div>
 
@@ -39,49 +39,49 @@ export default function Expertise() {
               icon: civilIcon,
               alt: "Ikona przedstawiająca prawo cywilne",
               to: "/prawo-cywilne",
-              title: "Prawo Cywilne",
+              title: "Civil Law",
               description:
-                "Zajmuję się sprawami dotyczącymi sporządzania i negocjacji umów, dochodzenia roszczeń oraz odszkodowań, a także ochroną praw osobistych. Reprezentuję klientów w sprawach cywilnych przed sądem oraz podczas mediacji.",
+                "We handle matters related to contract drafting and negotiation, claim and compensation claims, and the protection of personal rights. I represent clients in civil cases before courts and during mediation.",
             },
             {
               icon: familyIcon,
               alt: "Ikona przedstawiająca prawo rodzinne",
               to: "/prawo-rodzinne",
-              title: "Prawo Rodzinne",
+              title: "Family Law",
               description:
-                "Pomagam klientom w kwestiach rozwodowych, ustaleniu opieki nad dziećmi, alimentów oraz podziału majątku. Zajmuję się również sporami rodzinnymi, zapewniając wsparcie w trudnych sytuacjach życiowych.",
+                "We assist clients with divorce matters, child custody, alimony, and property division. I also handle family disputes, providing support during difficult life situations.",
             },
             {
               icon: economIcon,
               alt: "Ikona przedstawiająca prawo gospodarcze",
               to: "/prawo-gospodarcze",
-              title: "Prawo Gospodarcze",
+              title: "Commercial Law",
               description:
-                "Doradzam firmom w zakresie tworzenia umów handlowych, przekształceń spółek oraz sporów gospodarczych. Wspieram przedsiębiorstwa na każdym etapie ich działalności, dbając o zgodność z przepisami prawnymi.",
+                "We advise companies on drafting commercial contracts, company transformations, and commercial disputes. I support businesses at every stage of their operations, ensuring compliance with legal regulations.",
             },
             {
               icon: jobIcon,
               alt: "Ikona przedstawiająca prawo pracy",
               to: "/prawo-pracy",
-              title: "Prawo Pracy",
+              title: "Labor Law",
               description:
-                "Reprezentuję zarówno pracowników, jak i pracodawców w sprawach dotyczących umów o pracę, zwolnień, sporów pracowniczych oraz mobbingu. Doradzam w zakresie praw i obowiązków wynikających z kodeksu pracy.",
+                "We represent both employees and employers in matters relating to employment contracts, dismissals, labor disputes, and mobbing. I also advise on rights and obligations arising from the Labor Code..",
             },
             {
               icon: estateIcon,
               alt: "Ikona przedstawiająca prawo nieruchomości",
               to: "/prawo-nieruchomosci",
-              title: "Prawo Nieruchomości",
+              title: "Real estate Law",
               description:
-                "Oferuję kompleksową pomoc prawną w zakresie kupna, sprzedaży, wynajmu nieruchomości oraz sporów związanych z prawem własności. Pomagam w sporządzaniu umów, negocjacjach oraz prowadzeniu spraw sądowych dotyczących nieruchomości.",
+                "I offer comprehensive legal assistance in real estate purchases, sales, and rentals, as well as property disputes. I assist in drafting contracts, negotiating, and handling real estate litigation.",
             },
             {
               icon: dataIcon,
               alt: "Ikona przedstawiająca ochronę danych osobowych",
               to: "/prawo-danych",
-              title: "Prawo Ochrony Danych Osobowych",
+              title: "Personal Data Protection Law",
               description:
-                "Zajmuję się doradztwem w zakresie przepisów dotyczących ochrony danych osobowych (RODO). Pomagam firmom dostosować się do wymogów prawnych, sporządzać polityki prywatności oraz chronić dane klientów.",
+                "I provide consulting services on personal data protection regulations (GDPR). I help companies comply with legal requirements, develop privacy policies, and protect customer data.",
             },
           ].map((item, index) => (
             <Link className="gridElement" key={index} to={item.to}>

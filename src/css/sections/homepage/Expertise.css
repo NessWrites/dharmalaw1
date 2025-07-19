@@ -45,6 +45,9 @@
 
 .lawDescription{
     text-transform: none;
+    font-size: 2.125 rem;
+    font-size: var(--font-lg);
+    line-height: 1.6;
 }
 
 @media (min-width: 768px) {

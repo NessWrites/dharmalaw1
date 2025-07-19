@@ -7,14 +7,14 @@ import "./../../../css/components/header/menu/Menu.css";
 
 const menuItems = [
   { label: "Strona Główna", id: "home"},
-  { label: "Misja", id: "mission" },
+  { label: "Misson", id: "mission" },
   {
-    label: "Czym się zajmuję?",
+    label: "Our Services",
     id: "expertise",
     expandable: true,
   },
-  { label: "O mnie", id: "about" },
-  { label: "Kontakt", id: "contact" },
+  { label: "About us", id: "about" },
+  { label: "Contact", id: "contact" },
 ];
 
 export default function Menu({ onClose }) {

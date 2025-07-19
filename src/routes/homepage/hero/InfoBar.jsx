@@ -14,14 +14,14 @@ export default function InfoBar({ onScrollToSection }) {
         <InfoItem icon={LetterIcon} text="narayan@dharmalawpc.com
 " />
         <span className="dot">•</span>
-        <InfoItem icon={ClockIcon} text="Mon-Fri 9:00-16:00" />
+        <InfoItem icon={ClockIcon} text="Mon-Fri 9:00-6:00" />
       </div>
       <button
         className="messageButton"
         onClick={() => onScrollToSection("contact")}
       >
         <img className="bubble" src={BubbleIcon} alt="bubble chat icon" />
-        Napisz wiadomość
+        Write a Message
       </button>
     </div>
   );

@@ -9,10 +9,10 @@ export default function MenuList() {
 
   const menuItems = [
     { id: "home", label: "Home" },
-    { id: "mission", label: "Misja" },
-    { id: "expertise", label: "Czym się zajmuję?" },
-    { id: "about", label: "O Mnie" },
-    { id: "contact", label: "Kontakt" },
+    { id: "mission", label: "Mission" },
+    { id: "expertise", label: "Our Servicess" },
+    { id: "about", label: "About Us" },
+    { id: "contact", label: "Contacts" },
   ];
 
   return (

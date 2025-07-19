@@ -17,8 +17,8 @@ export default function Mission() {
         onViewportEnter={() => console.log("Animation triggered!")}
       >
         <h2 id="mission-heading" className="missionTitle subheading">
-          Dbamy o <br />
-          naszych klientów
+          We care about <br />
+          our customers
         </h2>
       </motion.div>
 
@@ -32,13 +32,17 @@ export default function Mission() {
         className="missionText__section"
       >
         <p className="missionText">
-          Jako ambitny, młody prawnik, jestem zaangażowana w dostarczanie
-          innowacyjnej i dopasowanej pomocy prawnej, aby sprostać zróżnicowanym
-          potrzebom moich klientów. Skupiając się na jasnej komunikacji, empatii
-          oraz dogłębnym zrozumieniu prawa, dążę do tego, aby proces prawny był
-          jak najbardziej przejrzysty i bezstresowy. Zapoznaj się z oferowanymi
-          przeze mnie usługami i dowiedz się, jak mogę Ci pomóc w pewnym i
-          spokojnym pokonywaniu wyzwań prawnych.
+          With over decade of legal experience, our firm is guided by a 
+          steadfast commitment to integrity, precision, and client advocacy.
+           We strive to provide comprehensive, solution-oriented legal services 
+           in the areas of immigration, real estate, civil law, labor law, and
+            personal data protection. Our mission is to uphold the rule of law
+             while empowering individuals and businesses to navigate complex 
+             legal landscapes with confidence. Through unwavering focus,
+              personalized attention, and an in-depth understanding of 
+              evolving regulations, we aim to deliver outcomes that not only 
+              meet legal standards but protect our clients’ long-term interests
+               with diligence and discretion.
         </p>
       </motion.div>
 
@@ -57,7 +61,7 @@ export default function Mission() {
           }}
           aria-label="Przejdź do sekcji kontaktowej"
         >
-          <span aria-hidden="true">Kontakt</span>
+          <span aria-hidden="true">Contact</span>
         </button>
       </motion.div>
     </section>
