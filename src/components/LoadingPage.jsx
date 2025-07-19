@@ -1,4 +1,4 @@
-import Logo from "./../assets/logo.svg";
+import Logo from "./../assets/DLPC_logo.svg";
 import "./../css/components/LoadingPage.css";
 
 export default function LoadingPage() {

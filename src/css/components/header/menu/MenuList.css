@@ -32,6 +32,8 @@
     margin-right: 0.4rem;
     outline: none;
     transition: background-size 0.4s;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+
   }
 
   .menuBtn:hover, .menuBtn:focus {

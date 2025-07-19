@@ -9,11 +9,12 @@ export default function InfoBar({ onScrollToSection }) {
   return (
     <div className="infoBar">
       <div className="infoSection">
-        <InfoItem icon={PhoneIcon} text="+48 123 456 789" />
+        <InfoItem icon={PhoneIcon} text="+1 925-822-3440" />
         <span className="dot">•</span>
-        <InfoItem icon={LetterIcon} text="martynaw@gmail.com" />
+        <InfoItem icon={LetterIcon} text="narayan@dharmalawpc.com
+" />
         <span className="dot">•</span>
-        <InfoItem icon={ClockIcon} text="Pon-Pt 9:00-16:00" />
+        <InfoItem icon={ClockIcon} text="Mon-Fri 9:00-16:00" />
       </div>
       <button
         className="messageButton"

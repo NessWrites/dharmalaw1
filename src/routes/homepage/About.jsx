@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import AboutImg from "./../../assets/Martyna.jpg";
+import AboutImg from "./../../assets/nu.jpg";
 import "./../../css/sections/homepage/About.css";
 
 export default function About() {
@@ -12,7 +12,7 @@ export default function About() {
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <img className="aboutImg" src={AboutImg} alt="Woman lawyer" />
+        <img className="aboutImg" src={AboutImg} alt="Narayan Uncle lawyer" />
       </motion.div>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
@@ -21,8 +21,8 @@ export default function About() {
         viewport={{ once: true, amount: 0.2 }}
         className="aboutText__section"
       >
-        <p className="lawyerAbout">prawnik</p>
-        <h2 className="h2About">Martyna Winiarska</h2>
+        <p className="lawyerAbout">Attorney</p>
+        <h2 className="h2About">Narayan P. Bhandari</h2>
         <p className="aboutText">
           Jestem prawnikiem specjalizującym się w sprawach cywilnych i
           gospodarczych. Pomagam klientom w rozwiązywaniu trudnych problemów

@@ -9,6 +9,7 @@
     justify-content: center;
     min-height: 800px;
     text-align: center;
+    font-size: clamp(1rem, 1.2vw, 1.5rem); /* dynamically scales */
 }
 
 .missionTitle {
@@ -22,10 +23,13 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    line-height: 1.6;
+    
+
 }
 
 .missionText {
-    width: 80%;
+    width: 100%;
     margin-bottom: 4rem;
 }
 
@@ -72,7 +76,7 @@
 
     .missionText{
         margin-bottom: 3rem;
-        width: 500px;
+        width: 800px;
     }
 
     .missionButton{
@@ -86,7 +90,9 @@
     }
 
     .missionButton {
-        width: 275px;
+        width: 370px;
+        height: 70px;
+        font-size: 25px;
     }
 }
 
