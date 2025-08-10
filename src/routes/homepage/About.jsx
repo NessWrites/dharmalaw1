@@ -22,7 +22,7 @@ export default function About() {
         className="aboutText__section"
       >
         <p className="lawyerAbout">Attorney</p>
-        <h2 className="h2About">Narayan P. Bhandari</h2>
+        <h1 className="h2About">Narayan P. Bhandari</h1>
         <p className="aboutText">
           I am a lawyer specializing in civil and commercial matters. 
           I help clients resolve difficult legal issues and offer support

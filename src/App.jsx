@@ -5,7 +5,9 @@ import Footer from "./components/Footer.jsx";
 import Home from "./routes/homepage/Home.jsx";
 import LoadingPage from "./components/LoadingPage.jsx";
 import SubPage from "./routes/subpage/SubPage.jsx";
-
+import Publication from "./routes/Publication.jsx";
+import PublishedPosts from "./routes/PublishedPosts.jsx";
+import BookAppointment from "./routes/book-appointment.jsx";
 export default function App() {
   const [loading, setLoading] = useState(true);
 
@@ -123,6 +125,8 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/publication" element={<PublishedPosts />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
           {pages.map((page, index) => (
             <Route
               key={index}

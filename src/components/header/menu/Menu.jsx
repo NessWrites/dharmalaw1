@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
 import MenuExp from "./MenuExp.jsx";
 import ArrowDownIcon from "./../../../assets/icons/icon-arrow-down.svg";
 import ArrowUpIcon from "./../../../assets/icons/icon-arrow-up.svg";
@@ -6,7 +7,7 @@ import CloseIcon from "./../../../assets/icons/closeIcon.svg";
 import "./../../../css/components/header/menu/Menu.css";
 
 const menuItems = [
-  { label: "Strona Główna", id: "home"},
+  { label: "Strona Główna", id: "home", to: "/"},
   { label: "Misson", id: "mission" },
   {
     label: "Our Services",
@@ -15,12 +16,15 @@ const menuItems = [
   },
   { label: "About us", id: "about" },
   { label: "Contact", id: "contact" },
+  { label: "Publication", id: "publication", to: "/publication" },
+  { label: "Book an Appointment", id: "book-appointment", to: "/book-appointment" },
 ];
 
 export default function Menu({ onClose }) {
   const [animation, setAnimation] = useState(false);
   const [showExp, setShowExp] = useState(false);
   const menuRef = useRef();
+  const location = useLocation();
 
   const onCloseAll = () => {
     setAnimation(true);
@@ -44,6 +48,10 @@ export default function Menu({ onClose }) {
   const handleClick = (item) => {
     if (item.expandable) {
       setShowExp(!showExp);
+    } else if (item.to) {
+      // Navigate to the specified route
+      window.location.hash = item.to;
+      onCloseAll();
     } else {
       if (item.scrollTo === 0) {
         window.scroll({ top: 0, behavior: "smooth" });
@@ -82,14 +90,24 @@ export default function Menu({ onClose }) {
                 } ${isExpanded ? "expanded" : ""}`}
               >
                 <div className={item.expandable ? "sideMenuItemRow" : ""}>
-                  <button
-                    className="sideMenuLink"
-                    onClick={() => handleClick(item)}
-                    aria-expanded={item.expandable ? showExp : undefined}
-                    aria-controls={item.expandable ? "submenu" : undefined}
-                  >
-                    {item.label}
-                  </button>
+                  {item.to ? (
+                    <Link
+                      className="sideMenuLink"
+                      to={item.to}
+                      onClick={onCloseAll}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <button
+                      className="sideMenuLink"
+                      onClick={() => handleClick(item)}
+                      aria-expanded={item.expandable ? showExp : undefined}
+                      aria-controls={item.expandable ? "submenu" : undefined}
+                    >
+                      {item.label}
+                    </button>
+                  )}
 
                   {item.expandable && (
                     <button

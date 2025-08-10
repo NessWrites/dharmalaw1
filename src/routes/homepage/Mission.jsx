@@ -16,10 +16,19 @@ export default function Mission() {
         viewport={{ once: false, amount: 0.2 }}
         onViewportEnter={() => console.log("Animation triggered!")}
       >
-        <h2 id="mission-heading" className="missionTitle subheading">
+        <h1
+          id="mission-heading"
+          className="missionTitle subheading"
+          style={{
+            fontFamily: "Merriweather, Playfair Display, or Libre Baskerville",
+            color: "#be9121", // bright golden
+            textShadow: "0.1px 0.1px 0.1px rgba(255, 255, 255, 0.9), 0 0 0px rgba(255, 255, 255, 0.8)"
+          }}
+          
+        >
           We care about <br />
           our customers
-        </h2>
+        </h1>
       </motion.div>
 
       <hr className="hrElement" aria-hidden="true" />

@@ -1,0 +1,39 @@
+/* Fix header/menu at top, full width, elevated z-index */
+.book-appointment-menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* Menu background and text color */
+  background-color: #ffffff; /* white bg so content doesn't show behind */
+  color: #ff6600; /* your desired menu font color */
+
+  /* Add some padding and subtle shadow for clarity */
+  padding: 12px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Ensure links/buttons inside header inherit the color */
+.book-appointment-menu a,
+.book-appointment-menu button,
+.book-appointment-menu span,
+.book-appointment-menu svg {
+  color: #114461 !important;
+}
+
+/* Push main content down so it’s not hidden behind fixed header */
+main {
+  padding-top: 10px; /* Adjust if header height changes */
+  max-width: 900px;
+  margin: 10px auto 0 auto; /* you may want to reduce top margin if too much */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

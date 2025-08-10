@@ -20,9 +20,9 @@
 }
 
 .dividerGold {
-    background-color: var(--gold);
+    background-color: #3d2f0f;
     border: none;
-    color: var(--gold);
+    color: #3d2f0f;
     height: 3px;
     margin: 2rem 0;
     width: 50px;
@@ -30,6 +30,8 @@
 
 .introSection p {
     width: 100%;
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 .imageSubpage {
@@ -39,8 +41,8 @@
 }
 
 .detailsSection {
-    background-color: #89745558;
-    color: var(--gold);
+    background-color: rgba(61, 47, 15, 0.1);
+    color: #1a1a1a;
     margin: 2rem 0;
     padding: 4rem 2rem;
     width: 100%;
@@ -50,6 +52,8 @@
     font-size: var(--font-subheading);
     margin: 1rem 0;
     width: 90%;
+    color: #3d2f0f;
+    font-weight: 600;
 }
 
 .listSubpage {
@@ -60,6 +64,8 @@
     list-style-type: disc;
     padding-bottom: .5rem;
     width: 90%;
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 @media(min-width: 768px) {

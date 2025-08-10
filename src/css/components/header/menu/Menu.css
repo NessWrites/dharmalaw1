@@ -1,108 +1,61 @@
-.menuBackdrop {
-  background-color: #0000006a;
-  height: 100svh;
-  width: 100%;
+/* Only keep unique styles for posts grid and cards. */
+
+/* Posts grid styles */
+.publication-page .postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
-.menuBackdrop.closing {
-  opacity: 0;
+/* Card styles */
+.publication-page .card {
+  background: linear-gradient(180deg, #ffffff, #f9f9f9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
 }
 
-.sideMenu {
-  animation: slideIn 0.5s forwards;
-  background-color: var(--background);
-  height: 100svh;
-  position: fixed;
-  right: -300px;
-  top: 0;
-  transition: all 0.75s ease;
-  width: 100%;
-  z-index: 99999999;
-  opacity: 1;
+.publication-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
-.sideMenu.closing {
-  opacity: 0;
-  width: 1px;
+.publication-page .card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
 
-.closeMenuBtn {
-  background: none;
-  border: none;
-  outline: none;
-  position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
+.publication-page .card .category {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0d6efd;
+  margin-bottom: 1rem;
 }
 
-.sideMenuList {
-  margin-top: 9rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.publication-page .card .content {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
-.sideMenuItem {
-  border-bottom: 1px solid var(--gold);
+.publication-page .card .date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Remove conflicting menuSection styles */
+.publication-page .menuSection {
   display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  transition: min-height 0.3s ease;
-  width: 100%;
-}
-
-.sideMenuItem, .sideMenuItemRow{
-    height: 60px;
-}
-
-.sideMenuItemRow{
-  display: flex;
-}
-
-.sideMenuItemExpandable {
-    display: flex;
-    flex-direction: column;
-}
-
-.sideMenuItem.expanded {
-    height: 100%;
-    min-height: 100%;
-}
-
-.sideMenuLink {
-  background: none;
-  border: none;
-  color: var(--gold);
-  height: 100%;
-  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   padding: 0;
-  text-align: left;
-  transition: background-size 0.3s;
-  width: 136px;
-}
-
-.toggleSubmenuBtn {
-  background: none;
-  border: none;
-}
-
-@media (min-width: 550px) {
-  .sideMenu {
-    width: 300px;
-  }
-
-  .sideMenuLink{
-    min-width: 155px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .sideMenu {
-    display: none;
-  }
-}
-
-@keyframes slideIn {
-  100% {
-    right: 0;
-  }
 }

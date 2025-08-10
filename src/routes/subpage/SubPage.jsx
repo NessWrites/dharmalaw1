@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Logo from "./../../assets/logo.png";
+import Logo from "./../../assets/DLPC_logo3.png";
 import SubPageImg from "./../../assets/subpageImg.jpg";
 import "./../../css/sections/SubPage.css";
 
@@ -13,7 +13,7 @@ export default function SubPage({ title, items, description, subTitle }) {
   return (
     <div className="subpageSection">
       <Link to="/">
-        <img className="logoSubpage" src={Logo} />
+        <img className="logoSubpage" src={Logo} alt="DLPC Law Firm Logo" />
       </Link>
       <div className="subpageContent">
         <motion.div
@@ -24,7 +24,7 @@ export default function SubPage({ title, items, description, subTitle }) {
           className="introSection"
         >
           <div className="textSubpage">
-            <h2 className="headingSubpage subheading">{title}</h2>
+            <h1 className="headingSubpage subheading">{title}</h1>
             <hr className="dividerGold" />
             <p>{description}</p>
           </div>

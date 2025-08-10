@@ -22,9 +22,9 @@ export default function Expertise() {
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h2 id="expertise-heading" className="expertiseTitle subheading">
+        <h1 id="expertise-heading" className="expertiseTitle subheading">
          Our Areas of Expertise
-        </h2>
+        </h1>
       </motion.div>
 
       <motion.div

@@ -39,15 +39,16 @@
 }
 
 .contactSubTitle {
-    color: var(--gold);
+    color: #3d2f0f;
     padding-top: 1rem;
     width: 90%;
+    font-weight: 600;
 }
 
 .hrContact {
-    background-color: var(--gold);
-    border: 1px solid var(--gold);
-    color: var(--gold);
+    background-color: #3d2f0f;
+    border: 1px solid #3d2f0f;
+    color: #3d2f0f;
     height: 0.0625rem;
     margin: 2rem 20% 0;
 }
@@ -63,20 +64,22 @@
 }
 
 .inputField {
-    background-color: rgba(255, 255, 255, 0.485);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 0.0625rem solid #ffffff00;
     border-radius: 0.1875rem; 
     outline: none;
     padding: 1.1rem 1.75rem; 
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 .inputField:focus {
-    border: 0.0625rem solid var(--gold); 
+    border: 0.0625rem solid #3d2f0f; 
 }
 
 input:-internal-autofill-selected {
-    background-color: rgba(255, 255, 255, 0.485);
-    border: 0.0625rem solid var(--gold); 
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.0625rem solid #3d2f0f; 
 }
 
 #message{
@@ -91,7 +94,7 @@ input:-internal-autofill-selected {
 }
 
 .errorText {
-    color: var(--gold);
+    color: #d32f2f;
     font-size: var(--font-xxs); 
     font-weight: 700;
     margin-bottom: 0;
@@ -109,16 +112,17 @@ input:-internal-autofill-selected {
 
 .submitBtn {
     background: transparent;
-    border: 0.0625rem solid var(--gold); 
-    color: var(--gold);
+    border: 0.0625rem solid #3d2f0f; 
+    color: #3d2f0f;
     padding: 1rem 1.5rem; 
     transition: all 0.5s linear;
     width: 100%;
     z-index: 9;
+    font-weight: 600;
 }
 
 .submitBtn:hover {
-    background-color: rgba(137, 116, 85, 0.266);
+    background-color: rgba(61, 47, 15, 0.2);
     transition: all 1s;
 }
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "./../assets/logo.png";
+import Logo from "./../assets/vis_card.png";
 import "./../css/components/Footer.css";
 
 export default function Footer() {
@@ -66,6 +66,9 @@ narayan@dharmalawpc.com.com</a>
 
       <div className="footerBottom">
         <p className="footerCredit">Copyrights</p>
+        <p className="footerCompliance" tabIndex="0" aria-live="polite">
+          <strong>Accessibility Compliance:</strong> This website complies with the United States: Americans with Disabilities Act (ADA), Section 508 of the Rehabilitation Act, and all applicable state-level accessibility laws.
+        </p>
       </div>
     </footer>
   );

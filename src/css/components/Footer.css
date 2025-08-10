@@ -1,13 +1,11 @@
 .footer {
-  color: var(--gold);
+  color: #3d2f0f;
   width: 100%;
 }
 
 .footerContent {
   padding: 3rem 1rem 0.5rem;
-  border-bottom: 1px solid var(--gold);
-  
-  
+  border-bottom: 1px solid #3d2f0f;
 }
 
 .footerSection {
@@ -17,24 +15,28 @@
 
 .footerInfo,
 .footerContact {
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid #3d2f0f;
   padding-bottom: 0.5rem;
 }
 
 .footerLogo {
-  width: 3rem;
-  height: 3rem;
+  width: 26rem;
+  height: 15rem;
   margin-bottom: 0.5rem;
+  display: block;       /* ensures it behaves like a block element */
+  margin-left: 0;       /* stick to the left */
 }
 
 .footerDescription {
   max-width: 22rem;
+  color: #1a1a1a;
+  font-weight: 500;
 }
 
 .footerHeading {
   font-weight: 600;
   margin: 1rem 0;
-  
+  color: #3d2f0f;
 }
 
 address{
@@ -43,13 +45,20 @@ address{
 
 address p{
   margin-top: 0;
+  color: #1a1a1a;
+  font-weight: 500;
 }
 
 .footerAddress a {
-  color: var(--gold);
+  color: #3d2f0f;
   font-weight: bold;
   text-decoration: none;
   text-transform: none;
+}
+
+.footerAddress a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
 }
 
 .footerLinks {
@@ -63,9 +72,15 @@ address p{
 }
 
 .footerLinks a {
-  color: var(--gold);
+  color: #3d2f0f;
   text-decoration: none;
   text-transform: none;
+  font-weight: 500;
+}
+
+.footerLinks a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
 }
 
 .footerBottom {
@@ -74,7 +89,22 @@ address p{
 
 .footerCredit {
   font-size: var(--font-xxs);
-  color: var(--gold);
+  color: #3d2f0f;
+  font-weight: 600;
+}
+
+.footerCompliance {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  background: #ffe58f;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 1rem auto 0 auto;
+  max-width: 700px;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 0 0 2px #bfa14a;
 }
 
 @media (min-width: 768px) {

@@ -32,33 +32,39 @@
 }
 
 .lawyerAbout {
-    color: var(--gold);
+    color: #3d2f0f;
     margin: 0;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .h2About {
-    color: var(--gold);
+    color: #3d2f0f;
     font-size: calc(6vw + .5em);
-    font-weight: 600;
+    font-weight: 700;
     margin: .5rem 0;
     text-transform: uppercase;
 }
 
 .aboutText{
     margin: 0.5rem 0;
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 .educationTitle {
-    color: var(--gold);
+    color: #3d2f0f;
     font-size: var(--font-xl);
     margin-bottom: 0;
     margin-top: 0.5rem;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .educationAbout{
     margin: 0.5rem 0 1.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 @media(min-width: 480px){

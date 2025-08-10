@@ -1,0 +1,197 @@
+.publication-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #1a1a1a;
+  font-weight: 500;
+  position: relative;
+  z-index: 0; /* ensure nothing floats above unless intended */
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #3d2f0f;
+  position: relative;
+  z-index: 3;
+}
+
+.page-header h1 {
+  color: #3d2f0f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.publication-page section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 0;
+}
+
+.publication-page h2 {
+  color: #3d2f0f;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3d2f0f;
+  padding-bottom: 0.5rem;
+}
+
+.publication-page input,
+.publication-page textarea,
+.publication-page select,
+.publication-page button,
+.publication-page input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #3d2f0f;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  font-weight: 500;
+  position: relative;
+  z-index: 5;
+  pointer-events: auto; /* ensure clicks work */
+}
+
+.publication-page textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.publication-page input:focus,
+.publication-page textarea:focus,
+.publication-page select:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 2px rgba(61, 47, 15, 0.2);
+}
+
+.publication-page button {
+  background-color: #3d2f0f;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+  width: auto; /* so buttons don't span full width */
+}
+
+.publication-page button:hover {
+  background-color: #1a1a1a;
+}
+
+.publication-page button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.publication-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.publication-page li {
+  background-color: #ffffff;
+  border: 1px solid #3d2f0f;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.publication-page h3 {
+  color: #3d2f0f;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.publication-page h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #3d2f0f;
+}
+
+.publication-page h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #3d2f0f;
+}
+
+.publication-page p {
+  color: #1a1a1a;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.publication-page img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.publication-page input[type="file"] {
+  border: 2px dashed #3d2f0f;
+  background-color: rgba(61, 47, 15, 0.05);
+  padding: 1rem;
+  text-align: center;
+}
+
+.publication-page input[type="file"]:hover {
+  background-color: rgba(61, 47, 15, 0.1);
+}
+
+/* Clickable TOC links */
+.toc-link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.toc-link:hover {
+  color: darkblue;
+}
+
+/* Sticky TOC (future use) */
+.toc-container {
+  position: sticky;
+  top: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #3d2f0f;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .publication-page {
+    padding: 1rem;
+  }
+
+  .publication-page section {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .publication-page h2 {
+    font-size: 1.5rem;
+  }
+}

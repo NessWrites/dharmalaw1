@@ -1,24 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all \/ .unset {
+    all: unset;
+  }
+}
 
 :root {
-  --black: #3a3a3a;
-  --white: #e6e6e6;
-  --background: var(--white);
-  --text-color: var(--black);
-  --black-hover: #989898;
-  --gold: #897455;
-  --gold-bckgr: #89745556;
-  --gray: #77766C;
-  --lighter-gold: #C7B191;
-  --font-xxs: 0.75rem;
-  --font-xs: 0.9rem;
-  --font-sm: 1rem;
-  --font-md: 1.15rem;
-  --font-lg: 1.3rem;
-  --font-xl: 1.75rem;
-  --font-xxl: 2.3rem;
-  --font-subheading: var(--font-xl);
-  box-sizing: border-box;
+  --13-24-font-family: "Inter", Helvetica;
+  --13-24-font-size: 13px;
+  --13-24-font-style: normal;
+  --13-24-font-weight: 400;
+  --13-24-letter-spacing: 0px;
+  --13-24-line-height: 24px;
+  --body-3-open-sans-16pt-regular-font-family: "Open Sans";
+  --body-3-open-sans-16pt-regular-font-size: 16px;
+  --body-3-open-sans-16pt-regular-font-style: normal;
+  --body-3-open-sans-16pt-regular-font-weight: 400;
+  --body-3-open-sans-16pt-regular-letter-spacing: 0px;
+  --body-3-open-sans-16pt-regular-line-height: normal;
+  --grey: rgba(25, 24, 26, 1);
+  --h5-open-sans-28pt-bold-font-family: "Open Sans", Helvetica;
+  --h5-open-sans-28pt-bold-font-size: 28px;
+  --h5-open-sans-28pt-bold-font-style: normal;
+  --h5-open-sans-28pt-bold-font-weight: 700;
+  --h5-open-sans-28pt-bold-letter-spacing: 0px;
+  --h5-open-sans-28pt-bold-line-height: normal;
+  --light-grey: rgba(249, 247, 250, 1);
+  --primary-color-2: rgba(17, 149, 255, 1);
+  --pure-white: rgba(255, 255, 255, 1);
+  --shadow: 0px 1px 3px 0px rgba(19, 10, 46, 0.13), 0px 3px 14px 0px rgba(19, 10, 46, 0.03), 0px 8px 32px 0px rgba(19, 10, 46, 0.07), 0px 30px 84px 0px rgba(19, 10, 46, 0.08);
+  --text-1a191f: rgba(26, 25, 31, 1);
+  --white: rgba(255, 255, 255, 1);
+  --x-1: rgba(254, 253, 255, 1);
+  --x-2: rgba(204, 202, 209, 1);
+  --x-3: rgba(108, 106, 114, 1);
+  --x-4: rgba(47, 45, 54, 1);
+  --yellow-fdd944: rgba(253, 218, 68, 1);
 }
 
 html{
@@ -69,6 +89,18 @@ ul{
   width: 50%;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 @keyframes animate-in-and-out {
 	entry 0%  {
 		opacity: 0;
@@ -111,8 +143,8 @@ ul{
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--black);
-    --text-color: var(--white);
+    --background: #1a1a1a;
+    --text-color: #ffffff;
   }
 
   #header{

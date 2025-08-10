@@ -10,7 +10,7 @@ export default function Logo() {
       transition={{ duration: 1 }}
       className="logo__section"
     >
-      <div className="logo" alt="Logo" />
+      <div className="logo" role="img" aria-label="DLPC Law Firm Logo" />
     </motion.div>
   );
 }
